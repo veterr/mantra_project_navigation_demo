@@ -1,0 +1,60 @@
+name: mantra_new_design_june
+description: A new Flutter project.
+version: 1.0.0+1
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  flutter: 
+    sdk: flutter
+  flutter_localizations: 
+    sdk: flutter
+  firebase_core: ^3.2.0
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  flutter_riverpod: ^2.4.9
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.2
+  connectivity_plus: ^5.0.2
+  outline_gradient_button: ^2.0.1+1
+  flutter_svg_provider: ^1.0.7
+  smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
+  dotted_border: ^2.1.0
+  firebase_auth: ^5.1.2
+dev_dependencies: 
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  uses-material-design: true
+  assets: 
+    - assets/
+    - assets/images/
+  fonts: 
+    - family: Open Sans
+      fonts: 
+        - asset: assets/fonts/OpenSans.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSansRomanSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/OpenSansBold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSansLight.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSansSemibold.ttf
+          weight: 600
+    - family: Montserrat
+      fonts: 
+        - asset: assets/fonts/MontserratRomanRegular.ttf
+          weight: 400
+        - asset: assets/fonts/MontserratRomanLight.ttf
+          weight: 300
+        - asset: assets/fonts/MontserratBold.ttf
+          weight: 700
+    - family: Abril Fatface
+      fonts: 
+        - asset: assets/fonts/AbrilFatfaceRegular.ttf
+          weight: 400
+    - family: Roboto
+      fonts: 
+        - asset: assets/fonts/RobotoRegular.ttf
+          weight: 400
