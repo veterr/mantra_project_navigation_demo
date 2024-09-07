@@ -178,51 +178,63 @@ class ModeScreenState extends ConsumerState<ModeScreen> {
                                 SizedBox(height: 32.v),
                                 _buildSliderSection(context),
                                 Spacer(),
-                                Padding(
-                                  padding: EdgeInsets.only(right: 78.h),
-                                  child: Align(
-                                    alignment: Alignment.centerRight,
-                                    child: Padding(
+                                Row(
+                                  children: [
+                                    CustomImageView(
+                                      imagePath: ImageConstant.imgArrowDown,
+                                      height: 38.adaptSize,
+                                      width: 38.adaptSize,
+                                      onTap: () {
+                                        onTapImgArrowdownone(context);
+                                      },
+                                    ),
+                                    Padding(
                                       padding: EdgeInsets.only(right: 78.h),
-                                      child: OutlineGradientButton(
-                                        onTap: () =>
-                                            onTapBtnArrowleftone(context),
-                                        padding: EdgeInsets.only(
-                                          left: 3.h,
-                                          top: 3.v,
-                                          right: 3.h,
-                                          bottom: 3.v,
-                                        ),
-                                        strokeWidth: 3.h,
-                                        gradient: LinearGradient(
-                                          begin: Alignment(0.4, 0.5),
-                                          end: Alignment(0.15, 0),
-                                          colors: [
-                                            theme.colorScheme.primary
-                                                .withOpacity(0),
-                                            theme.colorScheme.primary
-                                          ],
-                                        ),
-                                        corners: Corners(
-                                          topLeft: Radius.circular(46),
-                                          topRight: Radius.circular(46),
-                                          bottomLeft: Radius.circular(46),
-                                          bottomRight: Radius.circular(46),
-                                        ),
-                                        child: CustomIconButton(
-                                          height: 94.adaptSize,
-                                          width: 94.adaptSize,
-                                          padding: EdgeInsets.all(30.h),
-                                          decoration:
-                                              IconButtonStyleHelper.outline,
-                                          child: CustomImageView(
-                                            imagePath:
-                                                ImageConstant.imgGroup1216,
+                                      child: Align(
+                                        alignment: Alignment.centerRight,
+                                        child: Padding(
+                                          padding: EdgeInsets.only(right: 78.h),
+                                          child: OutlineGradientButton(
+                                            onTap: () =>
+                                                onTapBtnArrowleftone(context),
+                                            padding: EdgeInsets.only(
+                                              left: 3.h,
+                                              top: 3.v,
+                                              right: 3.h,
+                                              bottom: 3.v,
+                                            ),
+                                            strokeWidth: 3.h,
+                                            gradient: LinearGradient(
+                                              begin: Alignment(0.4, 0.5),
+                                              end: Alignment(0.15, 0),
+                                              colors: [
+                                                theme.colorScheme.primary
+                                                    .withOpacity(0),
+                                                theme.colorScheme.primary
+                                              ],
+                                            ),
+                                            corners: Corners(
+                                              topLeft: Radius.circular(46),
+                                              topRight: Radius.circular(46),
+                                              bottomLeft: Radius.circular(46),
+                                              bottomRight: Radius.circular(46),
+                                            ),
+                                            child: CustomIconButton(
+                                              height: 94.adaptSize,
+                                              width: 94.adaptSize,
+                                              padding: EdgeInsets.all(30.h),
+                                              decoration:
+                                                  IconButtonStyleHelper.outline,
+                                              child: CustomImageView(
+                                                imagePath:
+                                                    ImageConstant.imgGroup1216,
+                                              ),
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ),
+                                  ],
                                 )
                               ],
                             ),
@@ -283,6 +295,10 @@ class ModeScreenState extends ConsumerState<ModeScreen> {
   onTapBtnArrowleftone(BuildContext context) {
     print("!!!!Go to register!!!");
     NavigatorService.pushNamed(AppRoutes.registerScreen);
+  }
+
+  onTapImgArrowdownone(BuildContext context) {
+    Navigator.of(context).pop();
   }
 
   onTapImgFeathereditor(BuildContext context) {}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart' as fs;
+import 'package:mantra_new_design_june/presentation/start_screen_2_screen/start_screen_2_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../core/app_export.dart';
 import 'notifier/start_screen_1_notifier.dart';
@@ -194,9 +195,18 @@ class StartScreen1ScreenState extends ConsumerState<StartScreen1Screen> {
 
   /// Navigates to the startScreen2Screen when the action is triggered.
   onTapColumnstart(BuildContext context) {
-    print("!!!!! PUSH NAMED!!!");
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.startScreen2Screen,
+    print("!!!!! PUSH NAMEDDDD!!!");
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.startScreen2Screen,
+    // );
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            StartScreen2Screen(),
+        transitionDuration: Duration.zero, // Disables the transition animation
+        reverseTransitionDuration:
+            Duration.zero, // Disables reverse transition animation
+      ),
     );
     print("!!!!! AFTER PUSH NAMED!!!");
   }

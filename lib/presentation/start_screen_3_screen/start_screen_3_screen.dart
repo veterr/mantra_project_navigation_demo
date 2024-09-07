@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mantra_new_design_june/presentation/mode_screen/mode_screen.dart';
+import 'package:mantra_new_design_june/presentation/start_screen_2_screen/start_screen_2_screen.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
 import '../../core/app_export.dart';
 import '../../widgets/app_bar/appbar_trailing_image.dart';
@@ -187,7 +189,7 @@ class StartScreen3ScreenState extends ConsumerState<StartScreen3Screen> {
                           padding: EdgeInsets.all(14.h),
                           decoration: IconButtonStyleHelper.outlineTL34,
                           onTap: () {
-                            onTapBtnArrowleftone(context);
+                            onTapBtnArrowrightone(context);
                           },
                           child: CustomImageView(
                             imagePath: ImageConstant.imgArrowLeft,
@@ -207,23 +209,51 @@ class StartScreen3ScreenState extends ConsumerState<StartScreen3Screen> {
 
   /// Navigates to the startScreen2Screen when the action is triggered.
   onTapImgArrowdownone(BuildContext context) {
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.startScreen2Screen,
-    );
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.startScreen2Screen,
+    // );
+    print("NEWWAYBACK");
+    Navigator.of(context).pop();
+    // Navigator.of(context).push(
+    //   PageRouteBuilder(
+    //     pageBuilder: (context, animation, secondaryAnimation) =>
+    //         StartScreen2Screen(),
+    //     transitionDuration: Duration.zero, // Disables the transition animation
+    //     reverseTransitionDuration:
+    //         Duration.zero, // Disables reverse transition animation
+    //   ),
+    // );
   }
 
   /// Navigates to the modeScreen when the action is triggered.
   onTapTxtStartnow(BuildContext context) {
-    print("!!!!Start now!!!");
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.modeScreen,
+    print("!!!!NEWWAY5!!!");
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.modeScreen,
+    // );
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) => ModeScreen(),
+        transitionDuration: Duration.zero, // Disables the transition animation
+        reverseTransitionDuration:
+            Duration.zero, // Disables reverse transition animation
+      ),
     );
   }
 
   /// Navigates to the modeScreen when the action is triggered.
-  onTapBtnArrowleftone(BuildContext context) {
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.modeScreen,
+  onTapBtnArrowrightone(BuildContext context) {
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.modeScreen,
+    // );
+    print("!!!!NEWWAY4!!!!!");
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) => ModeScreen(),
+        transitionDuration: Duration.zero, // Disables the transition animation
+        reverseTransitionDuration:
+            Duration.zero, // Disables reverse transition animation
+      ),
     );
   }
 }

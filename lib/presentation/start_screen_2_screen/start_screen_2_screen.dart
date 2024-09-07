@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mantra_new_design_june/presentation/start_screen_3_screen/start_screen_3_screen.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../core/app_export.dart';
@@ -167,7 +168,7 @@ class StartScreen2ScreenState extends ConsumerState<StartScreen2Screen> {
                         padding: EdgeInsets.all(14.h),
                         decoration: IconButtonStyleHelper.outlineTL34,
                         onTap: () {
-                          onTapBtnArrowleftone(context);
+                          onTapBtnArrowrightone(context);
                         },
                         child: CustomImageView(
                           imagePath: ImageConstant.imgArrowLeft,
@@ -188,15 +189,37 @@ class StartScreen2ScreenState extends ConsumerState<StartScreen2Screen> {
 
   /// Navigates to the startScreen1Screen when the action is triggered.
   onTapImgArrowdownone(BuildContext context) {
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.startScreen1Screen,
-    );
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.startScreen1Screen,
+    // );
+    print("POOOOOP!!!!");
+    Navigator.of(context).pop();
   }
 
   /// Navigates to the startScreen3Screen when the action is triggered.
-  onTapBtnArrowleftone(BuildContext context) {
-    NavigatorService.pushNamedAndRemoveUntil(
-      AppRoutes.startScreen3Screen,
+  onTapBtnArrowrightone(BuildContext context) {
+    // NavigatorService.pushNamedAndRemoveUntil(
+    //   AppRoutes.startScreen3Screen,
+    // );
+    // print("Go to 3!!!!!!");
+    // Navigator.of(context).push(
+    //   PageRouteBuilder(
+    //     pageBuilder: (context, animation, secondaryAnimation) =>
+    //         StartScreen3Screen(),
+    //     transitionDuration: Duration.zero, // Disables the transition animation
+    //     reverseTransitionDuration:
+    //         Duration.zero, // Disables reverse transition animation
+    //   ),
+    // );
+    print("!!!!NEWWAY3!!!");
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) =>
+            StartScreen3Screen(),
+        transitionDuration: Duration.zero, // Disables the transition animation
+        reverseTransitionDuration:
+            Duration.zero, // Disables reverse transition animation
+      ),
     );
   }
 }
