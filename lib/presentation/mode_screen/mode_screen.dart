@@ -294,7 +294,7 @@ class ModeScreenState extends ConsumerState<ModeScreen> {
 
   onTapBtnArrowleftone(BuildContext context) {
     print("!!!!Go to register!!!");
-    NavigatorService.pushNamed(AppRoutes.registerScreen);
+    NavigatorService.pushNamed(AppRoutes.registerScreen, context);
   }
 
   onTapImgArrowdownone(BuildContext context) {

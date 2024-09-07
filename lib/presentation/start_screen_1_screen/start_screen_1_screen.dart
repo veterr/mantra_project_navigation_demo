@@ -197,17 +197,9 @@ class StartScreen1ScreenState extends ConsumerState<StartScreen1Screen> {
   onTapColumnstart(BuildContext context) {
     print("!!!!! PUSH NAMEDDDD!!!");
     // NavigatorService.pushNamedAndRemoveUntil(
-    //   AppRoutes.startScreen2Screen,
+    //AppRoutes.startScreen2Screen,
     // );
-    Navigator.of(context).push(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) =>
-            StartScreen2Screen(),
-        transitionDuration: Duration.zero, // Disables the transition animation
-        reverseTransitionDuration:
-            Duration.zero, // Disables reverse transition animation
-      ),
-    );
+    NavigatorService.pushNamed(AppRoutes.startScreen2Screen, context);
     print("!!!!! AFTER PUSH NAMED!!!");
   }
 

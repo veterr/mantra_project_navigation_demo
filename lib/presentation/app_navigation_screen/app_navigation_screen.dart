@@ -155,6 +155,6 @@ class AppNavigationScreenState extends ConsumerState<AppNavigationScreen> {
 
   /// Common click event
   void onTapScreenTitle(String routeName) {
-    NavigatorService.pushNamed(routeName);
+    NavigatorService.pushNamed(routeName, context);
   }
 }

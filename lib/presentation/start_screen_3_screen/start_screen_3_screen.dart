@@ -213,7 +213,7 @@ class StartScreen3ScreenState extends ConsumerState<StartScreen3Screen> {
     //   AppRoutes.startScreen2Screen,
     // );
     print("NEWWAYBACK");
-    Navigator.of(context).pop();
+    NavigatorService.goBack(context);
     // Navigator.of(context).push(
     //   PageRouteBuilder(
     //     pageBuilder: (context, animation, secondaryAnimation) =>
@@ -226,34 +226,11 @@ class StartScreen3ScreenState extends ConsumerState<StartScreen3Screen> {
   }
 
   /// Navigates to the modeScreen when the action is triggered.
-  onTapTxtStartnow(BuildContext context) {
-    print("!!!!NEWWAY5!!!");
-    // NavigatorService.pushNamedAndRemoveUntil(
-    //   AppRoutes.modeScreen,
-    // );
-    Navigator.of(context).push(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => ModeScreen(),
-        transitionDuration: Duration.zero, // Disables the transition animation
-        reverseTransitionDuration:
-            Duration.zero, // Disables reverse transition animation
-      ),
-    );
-  }
-
-  /// Navigates to the modeScreen when the action is triggered.
   onTapBtnArrowrightone(BuildContext context) {
     // NavigatorService.pushNamedAndRemoveUntil(
     //   AppRoutes.modeScreen,
     // );
     print("!!!!NEWWAY4!!!!!");
-    Navigator.of(context).push(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => ModeScreen(),
-        transitionDuration: Duration.zero, // Disables the transition animation
-        reverseTransitionDuration:
-            Duration.zero, // Disables reverse transition animation
-      ),
-    );
+    NavigatorService.pushNamed(AppRoutes.modeScreen, context);
   }
 }

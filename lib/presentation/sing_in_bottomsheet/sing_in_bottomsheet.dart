@@ -129,8 +129,6 @@ class SingInBottomsheetState extends ConsumerState<SingInBottomsheet> {
 
   /// Navigates to the registerScreen when the action is triggered.
   onTapRegisterButton(BuildContext context) {
-    NavigatorService.pushNamed(
-      AppRoutes.registerScreen,
-    );
+    NavigatorService.pushNamed(AppRoutes.registerScreen, context);
   }
 }

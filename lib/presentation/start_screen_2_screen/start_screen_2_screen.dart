@@ -192,15 +192,12 @@ class StartScreen2ScreenState extends ConsumerState<StartScreen2Screen> {
     // NavigatorService.pushNamedAndRemoveUntil(
     //   AppRoutes.startScreen1Screen,
     // );
-    print("POOOOOP!!!!");
-    Navigator.of(context).pop();
+    NavigatorService.goBack(context);
   }
 
   /// Navigates to the startScreen3Screen when the action is triggered.
   onTapBtnArrowrightone(BuildContext context) {
-    // NavigatorService.pushNamedAndRemoveUntil(
-    //   AppRoutes.startScreen3Screen,
-    // );
+    NavigatorService.pushNamed(AppRoutes.startScreen3Screen, context);
     // print("Go to 3!!!!!!");
     // Navigator.of(context).push(
     //   PageRouteBuilder(
@@ -212,14 +209,14 @@ class StartScreen2ScreenState extends ConsumerState<StartScreen2Screen> {
     //   ),
     // );
     print("!!!!NEWWAY3!!!");
-    Navigator.of(context).push(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) =>
-            StartScreen3Screen(),
-        transitionDuration: Duration.zero, // Disables the transition animation
-        reverseTransitionDuration:
-            Duration.zero, // Disables reverse transition animation
-      ),
-    );
+    // Navigator.of(context).push(
+    //   PageRouteBuilder(
+    //     pageBuilder: (context, animation, secondaryAnimation) =>
+    //         StartScreen3Screen(),
+    //     transitionDuration: Duration.zero, // Disables the transition animation
+    //     reverseTransitionDuration:
+    //         Duration.zero, // Disables reverse transition animation
+    //   ),
+    // );
   }
 }

@@ -32,15 +32,30 @@ class AppRoutes {
 
   static const String initialRouteAuthorized = '/loged_in_level_select_screen';
 
-  static Map<String, WidgetBuilder> routes = {
-    registerScreen: (context) => RegisterScreen(),
-    startScreen2Screen: (context) => StartScreen2Screen(),
-    startScreen3Screen: (context) => StartScreen3Screen(),
-    modeScreen: (context) => ModeScreen(),
-    advancedLevelScreen: (context) => AdvancedLevelScreen(),
-    appNavigationScreen: (context) => AppNavigationScreen(),
+  static const String st = '/initialRoute';
+
+  static Map<String, WidgetBuilder> oldRoutes = {
     initialRouteAuthorized: (context) => LogedInLevelSelectScreen(),
-    startScreen1Screen: (context) => StartScreen1Screen(),
     initialRoute: (context) => StartScreen1Screen()
+  };
+
+  static Map<String, RoutePageBuilder> routes = {
+    registerScreen: (context, animation, secondaryAnimation) =>
+        RegisterScreen(),
+    startScreen2Screen: (context, animation, secondaryAnimation) =>
+        StartScreen2Screen(),
+    startScreen3Screen: (context, animation, secondaryAnimation) =>
+        StartScreen3Screen(),
+    modeScreen: (context, animation, secondaryAnimation) => ModeScreen(),
+    advancedLevelScreen: (context, animation, secondaryAnimation) =>
+        AdvancedLevelScreen(),
+    appNavigationScreen: (context, animation, secondaryAnimation) =>
+        AppNavigationScreen(),
+    initialRouteAuthorized: (context, animation, secondaryAnimation) =>
+        LogedInLevelSelectScreen(),
+    startScreen1Screen: (context, animation, secondaryAnimation) =>
+        StartScreen1Screen(),
+    initialRoute: (context, animation, secondaryAnimation) =>
+        StartScreen1Screen()
   };
 }

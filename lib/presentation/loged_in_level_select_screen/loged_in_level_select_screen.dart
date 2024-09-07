@@ -42,7 +42,7 @@ class LogedInLevelSelectScreenState
               alignment: Alignment.centerLeft,
               margin: EdgeInsets.only(left: 26.h),
             ),
-            SizedBox(height: 16.v),
+            SizedBox(height: 10.v),
             _buildDailySummary(context),
             Align(
               alignment: Alignment.centerLeft,
@@ -51,7 +51,7 @@ class LogedInLevelSelectScreenState
                 child: Divider(),
               ),
             ),
-            SizedBox(height: 14.v),
+            SizedBox(height: 10.v),
             _buildTimeManagement(context),
             SizedBox(height: 4.v)
           ],
@@ -257,7 +257,7 @@ class LogedInLevelSelectScreenState
                       ],
                     ),
                   ),
-                  SizedBox(height: 12.v),
+                  SizedBox(height: 10.v),
                   Text(
                     "msg_how_to_go_for_mantra".tr,
                     maxLines: 2,
@@ -285,7 +285,7 @@ class LogedInLevelSelectScreenState
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           _buildMotivationalQuote(context),
-          SizedBox(height: 18.v),
+          SizedBox(height: 12.v),
           Container(
             width: double.maxFinite,
             margin: EdgeInsets.symmetric(horizontal: 42.h),
@@ -475,7 +475,7 @@ class LogedInLevelSelectScreenState
           ),
           SizedBox(height: 8.v),
           _buildChantingSchedule(context),
-          SizedBox(height: 22.v),
+          SizedBox(height: 8.v),
           Container(
             width: double.maxFinite,
             margin: EdgeInsets.symmetric(horizontal: 26.h),
@@ -545,9 +545,7 @@ class LogedInLevelSelectScreenState
 
   /// Navigates to the advancedLevelScreen when the action is triggered.
   onTapBtnIconbutton(BuildContext context) {
-    NavigatorService.pushNamed(
-      AppRoutes.advancedLevelScreen,
-    );
+    NavigatorService.pushNamed(AppRoutes.advancedLevelScreen, context);
   }
 
   onTapImgScheduleoneone(BuildContext context) {}

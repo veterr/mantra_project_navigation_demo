@@ -19,7 +19,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   // !!! FirebaseAuth.instance.signOut() //here is for emulator purpose only!!!!!!
-  //sawait FirebaseAuth.instance.signOut();
+  await FirebaseAuth.instance.signOut();
   Future.wait([
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]),
     PrefUtils().init()
@@ -70,7 +70,7 @@ class MyApp extends ConsumerWidget {
                   initialRoute: isLoggedIn
                       ? AppRoutes.initialRouteAuthorized
                       : AppRoutes.initialRoute,
-                  routes: AppRoutes.routes,
+                  routes: AppRoutes.oldRoutes,
                 );
               }
             });
