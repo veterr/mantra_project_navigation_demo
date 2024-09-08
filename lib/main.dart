@@ -19,7 +19,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   // !!! FirebaseAuth.instance.signOut() //here is for emulator purpose only!!!!!!
-  await FirebaseAuth.instance.signOut();
+  // await FirebaseAuth.instance.signOut();
   Future.wait([
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]),
     PrefUtils().init()

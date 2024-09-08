@@ -49,6 +49,22 @@ class ImageConstant {
 
   static String imgActivity1 = '$imagePath/img_activity_1.svg';
 
+// News 1 images
+  static String imgGroup1474 = '$imagePath/img_group_1474.png';
+
+  static String imgImage61 = '$imagePath/img_image_61.png';
+
+  static String imgImage63 = '$imagePath/img_image_63.png';
+
+  static String imgImage64 = '$imagePath/img_image_64.png';
+
+  static String imgImage65 = '$imagePath/img_image_65.png';
+
+  static String imgSettingsPrimary = '$imagePath/img_settings_primary.svg';
+
+  static String imgNotificationBellSvgrepoComLightGreen300 =
+      '$imagePath/img_notification_bell_svgrepo_com_light_green_300.png';
+
 // Common images
   static String imgPath4 = '$imagePath/img_path4.svg';
 

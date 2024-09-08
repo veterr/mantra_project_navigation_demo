@@ -98,6 +98,24 @@ final Map<String, String> enUs = {
   "msg_loged_in_level_select": "Loged In level select",
   "msg_sing_in_bottomsheet": "Sing In - BottomSheet",
 
+  // News 1 Screen
+  "lbl_14_june_2024": "14 June 2024",
+  "lbl_6_hours_ago": "6 hours ago",
+  "lbl_read_more": "Read more",
+  "msg_10_july_2024_online":
+      "10 July 2024 Online Darshan with Paramahamsa Vishvananda",
+  "msg_experience_transformation5":
+      "Experience transformation at in-person darshan with Paramahamsa Vishwananda, a divine incarnation. Meet Him, receive His blessing, and connect more deeply ...",
+  "msg_mantra_chanting":
+      "Mantra chanting is a simple but powerful form of meditation that awakens a deep and lasting joy. Project Mantra is a free, 40-day guided journey to help you build up a mantra meditation practice. It is perfect for both beginners and advanced practitioners.",
+  "msg_new_track_relse":
+      "New  track relse on Bhakni Yoga Mantras label -  SriVitthala Gigidhari Parabramane Namah 6 hours",
+  "msg_new_track_relse2":
+      "New  track relse on Bhakni Yoga Mantras label - SriVitthala Gigidhari Parabramane Namah 6 hours",
+  "msg_om_chanting_brings":
+      "OM Chanting brings people together to share the positive vibrations of OM and their love for Mother Earth in local communities and nations around the world. God creates through vibration, OM is the seed vibration. Bathing in its resonance clears mental and physical blockages. The practice transforms:",
+  "msg_your_city_om_chanting": "Your city OM Chanting  event. ",
+
 // Network Error String
   "msg_network_err": "Network Error",
   "msg_something_went_wrong": "Something Went Wrong!",

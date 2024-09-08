@@ -14,6 +14,19 @@ class CustomButtonStyles {
           borderRadius: BorderRadius.circular(10.h),
         ),
       );
+  // Gradient button style
+  static BoxDecoration get gradientGrayToGrayTL10Decoration => BoxDecoration(
+        borderRadius: BorderRadius.circular(10.h),
+        border: Border.all(
+          color: appTheme.lightGreen300,
+          width: 1.h,
+        ),
+        gradient: LinearGradient(
+          begin: Alignment(-0.08, 1),
+          end: Alignment(1.12, 0),
+          colors: [appTheme.gray700, appTheme.gray700],
+        ),
+      );
 // text button style
   static ButtonStyle get none => ButtonStyle(
       backgroundColor: MaterialStateProperty.all<Color>(Colors.transparent),

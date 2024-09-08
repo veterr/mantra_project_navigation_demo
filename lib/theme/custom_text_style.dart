@@ -113,6 +113,11 @@ class CustomTextStyles {
         fontSize: 14.fSize,
         fontWeight: FontWeight.w400,
       );
+  static get bodyMediumPrimaryLight13 => theme.textTheme.bodyMedium!.copyWith(
+        color: theme.colorScheme.primary,
+        fontSize: 13.fSize,
+        fontWeight: FontWeight.w300,
+      );
 // Display text style
   static get displayLargeLightgreen300 =>
       theme.textTheme.displayLarge!.copyWith(
@@ -187,6 +192,12 @@ class CustomTextStyles {
         fontSize: 22.fSize,
         fontWeight: FontWeight.w400,
       );
+  static get titleLargeAbrilFatfacePrimary =>
+      theme.textTheme.titleLarge!.abrilFatface.copyWith(
+        color: theme.colorScheme.primary,
+        fontSize: 22.fSize,
+        fontWeight: FontWeight.w400,
+      );
   static get titleLargeGray80001 => theme.textTheme.titleLarge!.copyWith(
         color: appTheme.gray80001,
         fontWeight: FontWeight.w700,
@@ -202,6 +213,9 @@ class CustomTextStyles {
       theme.textTheme.titleLarge!.sFProDisplay.copyWith(
         color: appTheme.black900,
         fontWeight: FontWeight.w500,
+      );
+  static get titleLargeOnPrimary => theme.textTheme.titleLarge!.copyWith(
+        color: theme.colorScheme.onPrimary.withOpacity(1),
       );
   static get titleMediumMontserratOnSecondaryContainer =>
       theme.textTheme.titleMedium!.montserrat.copyWith(

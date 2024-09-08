@@ -5,6 +5,7 @@ import '../presentation/app_navigation_screen/app_navigation_screen.dart';
 import '../presentation/loged_in_level_select_screen/loged_in_level_select_screen.dart';
 import '../presentation/mode_screen/mode_screen.dart';
 import '../presentation/register_screen/register_screen.dart';
+import '../presentation/news_1_screen/news_1_screen.dart';
 import '../presentation/start_screen_1_screen/start_screen_1_screen.dart';
 import '../presentation/start_screen_2_screen/start_screen_2_screen.dart';
 import '../presentation/start_screen_3_screen/start_screen_3_screen.dart'; // ignore_for_file: must_be_immutable
@@ -32,7 +33,7 @@ class AppRoutes {
 
   static const String initialRouteAuthorized = '/loged_in_level_select_screen';
 
-  static const String st = '/initialRoute';
+  static const String news1Screen = '/news_1_screen';
 
   static Map<String, WidgetBuilder> oldRoutes = {
     initialRouteAuthorized: (context) => LogedInLevelSelectScreen(),
@@ -55,6 +56,7 @@ class AppRoutes {
         LogedInLevelSelectScreen(),
     startScreen1Screen: (context, animation, secondaryAnimation) =>
         StartScreen1Screen(),
+    news1Screen: (context, animation, secondaryAnimation) => News1Screen(),
     initialRoute: (context, animation, secondaryAnimation) =>
         StartScreen1Screen()
   };

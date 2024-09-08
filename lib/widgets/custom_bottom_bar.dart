@@ -81,7 +81,12 @@ class CustomBottomBarState extends State<CustomBottomBar> {
         }),
         onTap: (index) {
           selectedIndex = index;
+          // TODO а что это означает?
           widget.onChanged?.call(bottomMenuList[index].type);
+          if (bottomMenuList[index].type ==
+              BottomBarEnum.Notificationbellsvgrepocom) {
+            NavigatorService.pushNamed(AppRoutes.news1Screen, context);
+          }
           setState(() {});
         },
       ),
